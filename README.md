@@ -1,15 +1,3 @@
-# Docker compose
-## Dev
-```
-docker compose -f docker-compose-dev.yaml up -d
-```
-## Prod
-export IP=127.0.0.1 docker compose -f docker-compose-prod.yaml up -d
-
-# Init
-```shell
-poetry run python -m store.init
-```
 # Alembic
 
 ## New revision
@@ -20,11 +8,6 @@ alembic revision -m "Desc"
 ```shell
 alembic upgrade head
 ```
-
-
-# [Codestyle](https://google.github.io/styleguide/pyguide.html)
-We are using google python style guide
----
 
 # [Poetry](https://python-poetry.org/)
 
@@ -90,6 +73,7 @@ pre-commit run --all-files
 # Config
 You can use `environments variable` or `.env file` or `settings.toml file` to set configs
 ---
+
 # Test
 Write your fixtures in `conftest.py` and your helper functions in `utils.py`
 ```shell
